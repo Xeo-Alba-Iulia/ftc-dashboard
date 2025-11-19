@@ -23,7 +23,7 @@ enum TestEnum {
 };
 
 public class TestDashboardInstance {
-    private static TestDashboardInstance instance = new TestDashboardInstance();
+    private static final TestDashboardInstance instance = new TestDashboardInstance();
 
     final String DEFAULT_OP_MODE_NAME = "$Stop$Robot$";
     TestOpModeManager opModeManager = new TestOpModeManager();

@@ -10,6 +10,7 @@ checkstyle {
 }
 
 repositories {
+    maven("https://mymaven.bylazar.com/releases")
 	mavenCentral()
 }
 
@@ -18,8 +19,9 @@ dependencies {
 	implementation("com.google.code.gson:gson:2.8.6")
 
 	testImplementation("org.junit.jupiter:junit-jupiter:5.9.1")
-
 	testImplementation("org.nanohttpd:nanohttpd-websocket:2.3.1")
+
+    testImplementation("com.pedropathing:core:2.0.4")
 }
 
 dairyPublishing {
